@@ -1,0 +1,10 @@
+#creating folders in a directory by using the shell scripting...
+#script:
+vim scriptname.sh     ##open the terminal and give the command to create file and write the script
+mkdir directorname
+cd directoryname
+touch file1 file2
+after writting the script press esc and type : after write wq! so that you will go to the command terminal..
+ chmod 777 scriptname.sh [now give the complete permissions to the  script file]
+./scriptname.sh[execute the file]
+ls [check if files created or not]
