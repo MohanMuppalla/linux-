@@ -7,7 +7,7 @@ rm file name
 rm -dir
 History (gives the list of previously executed commands).
 The `cat` command prints the contents of a file without opening it, providing a quick way to view file contents.
-Vim command is used to create and edit files in the command line. Entering "insert mode" allows you to type text, and pressing "esc" returns to command mode
+Vim  {command is used to create and edit files in the command line. Entering "insert mode" allows you to type text, and pressing "esc" returns to command mode}
 Execute a shell script using either `sh scriptname` or `./scriptname`. The latter is used for executable files. Make sure to set execute permissions using `chmod +x scriptname` if needed.
 Execute a shell script using either `sh scriptname` or `./scriptname`. The latter is used for executable files. Make sure to set execute permissions using `chmod +x scriptname` if needed.
 Linux requires proper permissions to execute files. Use `chmod` to assign read, write, and execute permissions for different user categories: user, group, and others. Numeric values like 777 or 444 represent these permissions.
@@ -15,4 +15,14 @@ Linux requires proper permissions to execute files. Use `chmod` to assign read, 
 how to go to the command terminal after opening the vim and editor mode: 
 step1: first click on the esc now type :wq which is write and quit
 chmod 777 -- here each  digit indicates 4+2+1 [write+read+execute access] to the user+group+team.
-command to execute the script written in the file ./filename 
+ ./filename [command to execute the script written in the file]
+df -h [printing the available disk space in the  VM]
+free -g [shows the free  memory available]
+nproc [numbers of cpu's available in the VM]
+top [shows all the running sleeping and stopped process in the VM]
+TOP command can be considered as the command which helps to check the status of the node..
+whenever you are writting a script ina file mandatory steps you need to follow is writting the meta data 
+and when we execute a script file lets say we have written a file df -h, free -g,nproc and execute the file then we will get the output in the terminal
+but the user will have no idea what commands are executed... to remove this confusion we have two options 
+option 1: we can write echo right before the command... lets say df -h for this we will write [echo(we are printing the available disk space)]
+option2 : we can directly give a command "set -x" which runs in debug mode and  shows the commands which have given along with the output. 
