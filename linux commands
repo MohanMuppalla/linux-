@@ -12,3 +12,7 @@ Execute a shell script using either `sh scriptname` or `./scriptname`. The latte
 Execute a shell script using either `sh scriptname` or `./scriptname`. The latter is used for executable files. Make sure to set execute permissions using `chmod +x scriptname` if needed.
 Linux requires proper permissions to execute files. Use `chmod` to assign read, write, and execute permissions for different user categories: user, group, and others. Numeric values like 777 or 444 represent these permissions.
 ️ `chmod` permissions follow the 4-2-1 convention: 4 for read, 2 for write, and 1 for execute. Use these values to grant permissions to different users.
+how to go to the command terminal after opening the vim and editor mode: 
+step1: first click on the esc now type :wq which is write and quit
+chmod 777 -- here each  digit indicates 4+2+1 [write+read+execute access] to the user+group+team.
+command to execute the script written in the file ./filename 
