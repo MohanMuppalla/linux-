@@ -1,0 +1,14 @@
+pwd
+mkdir
+cd
+ls
+ls --all
+rm file name
+rm -dir
+History (gives the list of previously executed commands).
+The `cat` command prints the contents of a file without opening it, providing a quick way to view file contents.
+Vim command is used to create and edit files in the command line. Entering "insert mode" allows you to type text, and pressing "esc" returns to command mode
+Execute a shell script using either `sh scriptname` or `./scriptname`. The latter is used for executable files. Make sure to set execute permissions using `chmod +x scriptname` if needed.
+Execute a shell script using either `sh scriptname` or `./scriptname`. The latter is used for executable files. Make sure to set execute permissions using `chmod +x scriptname` if needed.
+Linux requires proper permissions to execute files. Use `chmod` to assign read, write, and execute permissions for different user categories: user, group, and others. Numeric values like 777 or 444 represent these permissions.
+️ `chmod` permissions follow the 4-2-1 convention: 4 for read, 2 for write, and 1 for execute. Use these values to grant permissions to different users.
