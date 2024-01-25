@@ -32,3 +32,10 @@ will be running in the background.. in the windows we can directly search and fi
 ps -ef [command to check what all processes are running in the VM]
 ps -f | grep "amazon" [this grep command is used for narrow searching it results all the process runnning with name amazon]
 pipe command "|" will send the output of the  first command to the second command  
+Q? why cant pipe work for the date command?
+lets say we have given the date command it gives the today's date...what if i give date | echo today's date is
+it will only print today's date is it does not give date because date is a default command sends it's output to the stdin. but | cannot pull
+output from the stdin.. it can only take output for those commands which are ready to give the output..
+awk command [we use grep command to get the whole information which has that specific word which we have given..to get only specific coulumns
+in the output rows we use awk command]
+ps -ef | grep "amazon" | awk -f  "" '{print $4}'    [this prints the 4th coulmn information from all the rows]
