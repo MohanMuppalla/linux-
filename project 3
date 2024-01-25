@@ -1,0 +1,10 @@
+#printing numbers and getting only required numbers in the output
+vim numbers.sh [create and edit the scriptfile]
+#script we write in the editor
+echo21
+echo 34
+echi33
+echo14
+go to command terminal by clicking esc and : wq! 
+./numbers.sh {this will print all the numbers}
+./numbers.sh | grep 1 [this will print numbers which contains only 1]
