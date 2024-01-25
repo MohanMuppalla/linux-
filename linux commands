@@ -26,3 +26,9 @@ and when we execute a script file lets say we have written a file df -h, free -g
 but the user will have no idea what commands are executed... to remove this confusion we have two options 
 option 1: we can write echo right before the command... lets say df -h for this we will write [echo(we are printing the available disk space)]
 option2 : we can directly give a command "set -x" which runs in debug mode and  shows the commands which have given along with the output. 
+what are processes in any system? 
+lets say we are opening youtube in the chrome and facebook in the mozilla these are two process and in the VM world there will be manymore processws
+will be running in the background.. in the windows we can directly search and find all the processs that are running but in linux we have
+ps -ef [command to check what all processes are running in the VM]
+ps -f | grep "amazon" [this grep command is used for narrow searching it results all the process runnning with name amazon]
+pipe command "|" will send the output of the  first command to the second command  
