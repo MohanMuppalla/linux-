@@ -1,5 +1,8 @@
 ##script for finding the node health
-set -x
+set -x    #debugmode shows all the commands which we are using in the project 
+set -e    #it exits the  script when there is an error in the  script..if we don't use this rest of the script will be executed
+set -o pipefail    # set -e doesn't work when there is a pipe command so we should use this to make sure the script exite when there is error
 df -h
 free -g
 nproc
+ps -ef | grep "amazon" | awk -F "" '{print $2}'
