@@ -48,3 +48,11 @@ curl -X GET api.food.com [this command will retrievev all the information presen
 man curl [will give all the  information about the curl command]
 wget "file location" [when we use this command it downloads the log file in some file directory unlike the curl command it don't print the information]
 we now need to grep the downloaded logfile to get the information
+/etc directory  configuration files for various applications and system settings are stored in the /etc directory.
+whenever we want to find some file in the linux file system use find command
+find/  gives all the files
+find / -name filename.
+kill -9  "processname"   [if you want to kill any running process here -9 instructs the compiler to kill the specific process].
+ctrl + c [whenver we want to stop continously running process "ctrl+c is a signal" ]
+here this signal is given by the user to the linux system..
+what if admin dont want somebody to interurpt his process then we can use the TRAP  command to 
