@@ -5,6 +5,12 @@ ls
 ls --all
 rm file name
 rm -dir
+#!/bin/bash  [shebang command this command tells the system whihc interpeter shoud be used to execute the script]
+#! [shebang symbol which indicates the start of the line ]
+/bin/bash [path to the interpreter execuctable]
+This shebangline is specific to bash scripts if we another shell we will specify a different interpreter
+#!/bin/sh [bourne shell]
+#!/bin/zsh [Zsh shell]
 History (gives the list of previously executed commands).
 The `cat` command prints the contents of a file without opening it, providing a quick way to view file contents.
 Vim  {command is used to create and edit files in the command line. Entering "insert mode" allows you to type text, and pressing "esc" returns to command mode}
