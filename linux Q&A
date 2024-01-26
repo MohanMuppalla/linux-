@@ -23,3 +23,43 @@ then
     echo $i
 fi
 done
+
+Q3
+print the count of alphabet s in missisippi
+x = missisippi
+
+Q4 
+how to run shell script in the debug mode?
+write set-x command in the starting line
+grep -o <<<"$X " | wc -l  [we storing input in standad command and the grep -o will filter out s letter o stands for only wc -l --will print word count]
+
+Q5
+what is crone tab?
+when we want run something daily at 5AM or some speicif point of time and store it in any location
+then we use cronetab this is like an alarm which completes its task daily 
+
+Q6 
+How to open a read only file?
+vimm -r test.sh
+
+Q7 
+what is the difference  between soft link and hard link?
+when we create a file in the memory and we want to use it regularly this might be chance of deleting it so we create a hard link for it
+the link of the main location is softlink and copy of it is hard link which we use very frequently....
+letsay in our system we have python3 installed and now we run ./python however the same info will also be moved to python-3 since it is soft link
+
+Q8 
+explain about a networkk troubleshooting tool/utility?
+when we want to understand why our network is slow we will use the command traceroute
+traceroute google.com [it will show number of hops the request is travelling and how much time each hop is taking]
+usually when we enter any reuquest in our system first it reaches our home router>>then isp router>> followed by multiple hops to reach destination
+we can also use "tracepath" command for finding network issues
+
+Q9
+How will you sort list of names in a file?
+SORT command
+
+Q10
+How will you manage logs of a system that generate huge logfiles in a system everyday?
+logrotate (gzip,zip)  [we can mention number of days of logs to be downloaded]
+
