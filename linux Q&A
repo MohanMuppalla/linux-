@@ -1,3 +1,4 @@
+##Q1
 List some commonly used day to day shell script commands by deovops engineer?
 ls
 find
@@ -13,3 +14,12 @@ wget
 TOP , SAR [debugging commands]
 ps -ef | awk F " " '{print $2}'    [script for printing all the processes here " " is the field seperator]
 curl link | grep "error"  [getting the log file from the remote server and printing the error logs]
+
+##Q2
+Write a shell script that prints all numbers that are divisible by 3 or 5 but not by 15 in between 1 and 100
+for i in {1..100} do 
+if (['expr$i%3' == 0]||['expr$i%5'==0]&&['expr$i%15!'=0])
+then 
+    echo $i
+fi
+done
