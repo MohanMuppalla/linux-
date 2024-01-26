@@ -1,0 +1,15 @@
+List some commonly used day to day shell script commands by deovops engineer?
+ls
+find
+cp
+mv
+mkdir
+cd
+Touch
+vim
+grep
+curl
+wget
+TOP , SAR [debugging commands]
+ps -ef | awk F " " '{print $2}'    [script for printing all the processes here " " is the field seperator]
+curl link | grep "error"  [getting the log file from the remote server and printing the error logs]
