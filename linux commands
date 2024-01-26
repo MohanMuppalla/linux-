@@ -39,3 +39,12 @@ output from the stdin.. it can only take output for those commands which are rea
 awk command [we use grep command to get the whole information which has that specific word which we have given..to get only specific coulumns
 in the output rows we use awk command]
 ps -ef | grep "amazon" | awk -f  "" '{print $4}'    [this prints the 4th coulmn information from all the rows]
+there will thousands of applications will be running in the VM what we do when one of the application fails we go check the log files
+cat logfile | grep error [this will not provide any list because we dont know where the log file]
+each institiution use their own log file storage location like aws stores in S3 and azure in blob ...etc
+so to get this we use a command   curl "location url" | grep error curl command will get the information frm the internet
+simillarly like postman tool and "requests module" in python curl is used for making API calls 
+curl -X GET api.food.com [this command will retrievev all the information present in food api]
+man curl [will give all the  information about the curl command]
+wget "file location" [when we use this command it downloads the log file in some file directory unlike the curl command it don't print the information]
+we now need to grep the downloaded logfile to get the information
